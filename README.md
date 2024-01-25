@@ -1,2 +1,1 @@
-# opus
-A simple task manager for the terminal
+# Learning C the hard way
