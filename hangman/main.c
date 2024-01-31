@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <ctype.h>
 
 int generate_random_int(){
   return 0 + rand() % 9;
@@ -42,6 +43,7 @@ int main(void){
     printf("Enter your guess> ");
     guess = getchar();
     while( getchar() != '\n');
+    guess = tolower(guess);
     for (int i = 0; i < strlen(word_to_guess); i++){
       if(word_to_guess[i]==guess){
         found = 1;
